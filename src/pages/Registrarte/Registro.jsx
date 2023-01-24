@@ -116,7 +116,7 @@ export default function Registro() {
           REGISTRATE<span className="blanco">.</span>
         </h2>
         <div className="divform2">
-          <form ref={form}>
+          <form className="formulario1" ref={form}>
             <TextField
               id="name"
               label="Nombre"

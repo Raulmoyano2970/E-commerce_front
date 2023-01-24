@@ -84,8 +84,8 @@ export default function Ingresar() {
         <h2>
           INGRESO<span className="blanco">.</span>
         </h2>
-        <div className="divform">
-          <form ref={form}>
+        <div className="divform" >
+          <form className="formulario1" ref={form}>
             <TextField
               id="email"
               label="Email"
