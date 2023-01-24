@@ -27,10 +27,15 @@ export default function Footer() {
               <li>Productos</li>
             </NavLink>
 
-            {logged ? (
+            {logged ? (<>
               <NavLink to="/carrito" style={{ textDecoration: "none" }}>
                 <li>Carrito</li>
               </NavLink>
+
+            <NavLink to="/favoritos" style={{ textDecoration: "none" }}>
+                <li>Favoritos</li>
+            </NavLink>
+                    </> 
             ) : (
               <></>
             )}
