@@ -73,6 +73,11 @@
     background-color:  #ef837b !important;
 }
 
+.mc-containerButton button{
+  color: black !important;
+}
+
+
 
 /*querys*/
 @media (max-width: 535px) {

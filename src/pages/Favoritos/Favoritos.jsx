@@ -1,4 +1,4 @@
-import React from "react";
+import React  from "react";
 import GoTo from "../../components/GoTo/GoTo";
 import "./favoritos.css";
 import "../Inicio/inicio.css";
@@ -21,13 +21,12 @@ export default function Favoritos() {
             En esta seccion podes ver todos los productos que te gustaron y los
             fuiste agregando a tus favoritos, analizalos y decide
           </p>
-
-          <a href="#productos" className="buttonInicio">
+          <a href="#favoritos" className="buttonInicio">
             <GoTo texto="FAVORITOS" />
           </a>
         </div>
       </div>
-      <h2 style={{ textAlign: "center", marginTop: 25 }}>
+      <h2 id="favoritos" style={{ textAlign: "center", marginTop: 25 }}>
         TUS PRODUCTOS FAVORITOS <span className="blanco">.</span>
       </h2>
 
@@ -36,7 +35,7 @@ export default function Favoritos() {
           className="containerCardsFavoritos"
           style={{ justifyContent: "center", alignItems: "center" }}
         >
-          <div className="sinarticulosencarro">
+          <div className="sinarticulosencarro" >
             <h3>Ingresá para ver tus favoritos</h3>
             <NavLink className="botonIrAproductos" to="/ingresar">
               Ingresar

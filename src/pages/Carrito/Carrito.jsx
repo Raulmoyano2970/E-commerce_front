@@ -193,12 +193,12 @@ export default function Carrito() {
             al carrito, analizarlos y finalizar tu compra
           </p>
 
-          <a href="#productos" className="buttonInicio">
+          <a href="#finalizar" className="buttonInicio">
             <GoTo texto="FINALIZAR" />
           </a>
         </div>
       </div>
-      <h2 style={{ textAlign: "center", marginTop: 25 }}>
+      <h2 id="finalizar" style={{ textAlign: "center", marginTop: 25 }}>
         TUS PRODUCTOS SELECCIONADOS <span className="blanco">.</span>
       </h2>
 
