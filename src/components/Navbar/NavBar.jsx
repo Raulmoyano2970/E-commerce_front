@@ -47,15 +47,27 @@ export default function NavBar() {
             </svg>
             {mostrarMenu ? (
               <ul className="navbar-nav d-md-flex flex-md-row justify-content-md-center align-items-center">
+                
+                <NavLink
+                to="/productos">
                 <li className="nav-item mx-md-3 mx-lg-1">
                   <a className="nav-link">Productos</a>
                 </li>
+                </NavLink>
+
+                <NavLink
+                to="/inicio">
+
                 <li className="nav-item mx-md-3 mx-lg-1">
                   <a className="nav-link">Inicio</a>
                 </li>
+                </NavLink>
+                <NavLink
+                to="/consultas">
                 <li className="nav-item mx-md-3 mx-lg-1">
                   <a className="nav-link">Consultas</a>
                 </li>
+                </NavLink>
               </ul>
             ) : null}
           </div>
