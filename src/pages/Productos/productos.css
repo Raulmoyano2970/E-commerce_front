@@ -106,9 +106,11 @@
   width: 100%;
   height: 550px;
   /* background-image: url("https://img.globaldata.pt/products/CC-9011231-WW_9.jpg"); */
-  background-image: url("https://cdn.discordapp.com/attachments/830354293822324736/1053650918874292234/Sin_titulo-1.jpg");
+ /* https://cdn.discordapp.com/attachments/830354293822324736/1053650918874292234/Sin_titulo-1.jpg*/
+  background-image: url("https://www.universidadviu.com/sites/universidadviu.com/files/images/qu%C3%A9%20es%20un%20gamer.jpg");
   background-size: cover;
   object-position: center;
+  background-position: -260px;
   border-radius: 12px;
   /* background-position: center; */
 }

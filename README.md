@@ -1,3 +1,51 @@
+# Shoppy venta de elementos de computacion
+
+## Repositorios Github
+front: https://github.com/Raulmoyano2970/E-commerce_front
+back: https://github.com/Raulmoyano2970/E-commerce_back
+
+## Host
+front: https://shoppyapp.vercel.app/ 
+back: https://shoppyback.onrender.com
+
+## Usuarios
+admin: mauroharretche@gmail.com  password: Mauh070992
+user: raulmoyano@gmail.com       password: hola123
+
+
+## Librerias y Frameworks
+        @emotion/react :  ^11.10.5 ,
+        @emotion/styled :  ^11.10.5 ,
+        @mui/icons-material :  ^5.11.0 ,
+        @mui/material :  ^5.11.0 ,
+        @mui/styled-engine-sc :  ^5.11.0 ,
+        @reduxjs/toolkit :  ^1.9.0 ,
+        @sweetalert2/themes :  ^5.0.15 ,
+        @testing-library/jest-dom :  ^5.16.5 ,
+        @testing-library/react :  ^13.4.0 ,
+        @testing-library/user-event :  ^13.5.0 ,
+        axios :  ^1.2.1 ,
+        bootstrap :  ^5.2.3 ,
+        bootstrap-icons :  ^1.10.2 ,
+        firebase :  ^9.15.0 ,
+        material-react-table :  ^1.4.2 ,
+        primeicons :  ^6.0.1 ,
+        primereact :  ^8.7.3 ,
+        react :  ^18.2.0 ,
+        react-dom :  ^18.2.0 ,
+        react-redux :  ^8.0.5 ,
+        react-router :  ^6.4.3 ,
+        react-router-dom :  ^6.4.3 ,
+        react-scripts :  5.0.1 ,
+        react-toastify :  ^9.1.1 ,
+        styled-components :  ^5.3.6 ,
+        sweetalert :  ^2.1.2 ,
+        sweetalert2 :  ^11.6.15 ,
+        swiper :  ^8.0.0 ,
+        web-vitals :  ^2.1.4 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
