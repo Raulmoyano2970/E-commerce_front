@@ -1,3 +1,5 @@
+
+
 # Shoppy venta de elementos de computacion
 
 ## Levantamiento
