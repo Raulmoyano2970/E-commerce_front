@@ -60,7 +60,8 @@ export default function Productos() {
     setMaximo(e.target.value);
   };
 
-  useEffect(() => {
+  useEffect(() => { 
+    // buscamos por nombre y tambien seleccionarlo
     let peticionVariable = "?";
 
     if (nombre !== "" && nombre !== null) {
@@ -159,7 +160,7 @@ export default function Productos() {
             <TextField
               id="maxPrice"
               onChange={filtroMaxPrice}
-              placeholder="$ Maximo"
+              placeholder="$ Mínimo"
               sx={{ width: 120 }}
               type="number"
               variant="outlined"
@@ -168,7 +169,7 @@ export default function Productos() {
             <TextField
               id="minPrice"
               onChange={filtroMinPrice}
-              placeholder="$ Maximo"
+              placeholder="$ Máximo"
               type="number"
               sx={{ width: 120 }}
               variant="outlined"
@@ -192,7 +193,7 @@ export default function Productos() {
                   <Card objeto={x} texto="COMPRAR" key={x._id}></Card>
                 ))
               ) : (
-                <h4>No se encontraron productos con su busqueda</h4>
+                <h4>No se encontraron productos con su búsqueda</h4>
               )}
             </div>
           

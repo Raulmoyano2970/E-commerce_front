@@ -16,6 +16,7 @@ import axios from "axios";
 import API from "../../config/api";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import logo from "../../imagenes/LOGOSHOPPY.png"
 
 export default function Registro() {
   const [showPassword, setShowPassword] = React.useState(false);
@@ -107,7 +108,7 @@ export default function Registro() {
     <div className="Ingreso">
       <img
         className="shoppyLogoRegistro"
-        src="https://cdn.discordapp.com/attachments/830354293822324736/1051744433550397510/Sin_titulo-2.png"
+        src={logo}
         alt="logo_shoppy"
       />
 

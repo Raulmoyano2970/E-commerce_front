@@ -8,8 +8,8 @@
 .mainBienvenida {
   min-height: 100vh;
   width: 100%;
-  background-image: url("https://cdn.discordapp.com/attachments/769400725977038868/1051728561066754068/61b4c8990185a_1.jpg");
-  background-color: rgba(0, 0, 0, 0.596);
+  background-image: url("../../imagenes/iniciogamershopp.mp4");
+  background-color: rgba(0, 0, 0, 0.396);
   background-blend-mode: color;
   background-attachment: fixed;
   background-size: cover;
@@ -29,7 +29,7 @@ video{
 .capa {
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.671);
+  background-color: rgba(0, 0, 0, 0.371);
   position: absolute;
 }
 

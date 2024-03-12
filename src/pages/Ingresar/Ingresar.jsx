@@ -10,7 +10,7 @@ import * as React from "react";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import userActions from "../../redux/actions/userActions";
-
+import logo from "../../imagenes/LOGOSHOPPY.png"
 import { NavLink, useNavigate } from "react-router-dom";
 import "./ingresar.css";
 import { useDispatch } from "react-redux";
@@ -76,7 +76,7 @@ export default function Ingresar() {
     <div className="Ingreso">
       <img
         className="shoppyLogoIngreso"
-        src="https://cdn.discordapp.com/attachments/830354293822324736/1051744433550397510/Sin_titulo-2.png"
+        src={logo}
         alt="logo_shoppy"
       />
       <div className="edFotoIngreso"></div>

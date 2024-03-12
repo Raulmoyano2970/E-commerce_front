@@ -1,5 +1,9 @@
 # Shoppy venta de elementos de computacion
 
+## Levantamiento
+npm i
+npm start
+
 ## Repositorios Github
 front: https://github.com/Raulmoyano2970/E-commerce_front
 back: https://github.com/Raulmoyano2970/E-commerce_back
@@ -9,9 +13,8 @@ front: https://shoppyapp.vercel.app/
 back: https://shoppyback.onrender.com
 
 ## Usuarios
-admin: mauroharretche@gmail.com  password: Mauh070992
-user: raulmoyano@gmail.com       password: hola123
-
+admin: raulmoyano@gmail.com  password: hola123
+user: mauroharretche@gmail.com   password: Mauh070992
 
 ## Librerias y Frameworks
         @emotion/react :  ^11.10.5 ,

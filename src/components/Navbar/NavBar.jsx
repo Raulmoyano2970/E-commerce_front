@@ -7,6 +7,7 @@ import { Badge } from "@mui/material";
 import "../Navbar/navbar.css";
 import { FavoriteBorder, ShoppingCartOutlined } from "@mui/icons-material";
 import { useSelector } from "react-redux";
+import logo from "../../imagenes/LOGOSHOPPY.png"
 
 export default function NavBar() {
   const location = useLocation();
@@ -26,7 +27,7 @@ export default function NavBar() {
     <header className="bg-transparent">
       <nav className="navbar  navbar-expand-lg pt-2 pt-lg-1">
         <img
-          src="https://cdn.discordapp.com/attachments/830354293822324736/1051744433550397510/Sin_titulo-2.png"
+          src={logo}
           alt="logo_shoppy"
         />
         <div className="px-3 px-lg-5">

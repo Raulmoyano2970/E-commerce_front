@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import GoTo from "../../components/GoTo/GoTo";
 import "../Bienvenida/bienvenida.css";
+import videobienvenida from "../../imagenes/iniciogamershopp.mp4"
 
 export default function Bienvenida() {
   return (
@@ -9,7 +10,7 @@ export default function Bienvenida() {
       <div className="mainBienvenida">
         <video muted autoPlay loop>
           <source
-            src="https://cdn.discordapp.com/attachments/830354293822324736/1051997742244835360/pexels-rodnae-productions-7914777.mp4"
+            src={videobienvenida}
             type="video/mp4"
           />
         </video>
