@@ -1,6 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../Footer/footer.css";
+import logo from "../../imagenes/LOGOSHOPPY.png"
+import pajarito from "../../imagenes/twiter.png"
+import instagram from "../../imagenes/instagram2.png"
+import tiktok from "../../imagenes/tiktoi.png"
 
 import { useSelector } from "react-redux";
 
@@ -57,17 +61,17 @@ export default function Footer() {
           <div className="divRedes">
             <a href="https://www.instagram.com/shoppytienda/" target={"_blank"}>
               <img
-                src="https://cdn.discordapp.com/attachments/830354293822324736/1051753999788953640/icons8-instagram-64.png"
+                src={instagram}
                 alt="instragram_shoppy"
               />
             </a>
             <img
-              src="https://cdn.discordapp.com/attachments/830354293822324736/1051754000229339156/icons8-tik-tok-60.png"
+              src={tiktok}
               alt="tiktok_shoppy"
             />
             <a href="https://twitter.com/ShoppyTienda" target={"_blank"}>
               <img
-                src="https://cdn.discordapp.com/attachments/830354293822324736/1051754000728465460/icons8-twitter-60.png"
+                src={pajarito}
                 alt="twitter_shoppy"
               />
             </a>
@@ -83,16 +87,16 @@ export default function Footer() {
         <p>shoppy store© all rights reserved.</p>
         <div className="divInferiorFooterimg">
           <img
-            src="https://cdn.discordapp.com/attachments/830354293822324736/1051744433550397510/Sin_titulo-2.png"
+            src={logo}
             alt="logo_shoppy"
           />
         </div>
-        <div className="pagosMedios">
+        {/* <div className="pagosMedios">
           <img
-            src="https://cdn.discordapp.com/attachments/830354293822324736/1051754889681834004/payments-summary.png"
+            src={mediospago}
             alt="metodos_de_pago"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
