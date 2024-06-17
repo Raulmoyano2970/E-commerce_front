@@ -35,14 +35,15 @@ export default function Productos() {
   let [maximo, setMaximo] = useState(null);
 
   let [peticion, setPeticion] = useState("");
+  const [loading, setLoading] = useState(true);
 
   const tipos = [...new Set(TodosLosproductos.map((x) => x.category))];
   const marcas = [...new Set(TodosLosproductos.map((x) => x.brand))];
-  
-  
 
   const productosTotales = async () => {
-    dispatch(productos());
+    setLoading(true);
+    await dispatch(productos());
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -60,8 +61,7 @@ export default function Productos() {
     setMaximo(e.target.value);
   };
 
-  useEffect(() => { 
-    // buscamos por nombre y tambien seleccionarlo
+  useEffect(() => {
     let peticionVariable = "?";
 
     if (nombre !== "" && nombre !== null) {
@@ -84,13 +84,14 @@ export default function Productos() {
   }, [nombre, value, value2, minimo, maximo]);
 
   const peticionProductosFiltrados = async () => {
-    dispatch(productosFiltrados({ peticion: peticion }));
+    setLoading(true);
+    await dispatch(productosFiltrados({ peticion: peticion }));
+    setLoading(false);
   };
 
   useEffect(() => {
     peticionProductosFiltrados();
   }, [peticion]);
-
 
   return (
     <>
@@ -188,17 +189,18 @@ export default function Productos() {
           </div>
           <div className="mc-containerProductGeneral">
             <div className="mc-containerCardsProducts">
-              {productosFiltradosArray.length > 0 ? (
-                productosFiltradosArray.map((x) => (
-                  <Card objeto={x} texto="COMPRAR" key={x._id}></Card>
-                ))
+              {loading ? (
+                <h4>Cargando productos...</h4>
               ) : (
-                <h4>No se encontraron productos con su búsqueda</h4>
+                productosFiltradosArray.length > 0 ? (
+                  productosFiltradosArray.map((x) => (
+                    <Card objeto={x} texto="COMPRAR" key={x._id}></Card>
+                  ))
+                ) : (
+                  <h4>No se encontraron productos con su búsqueda</h4>
+                )
               )}
             </div>
-          
-
-        
           </div>
         </div>
       </div>

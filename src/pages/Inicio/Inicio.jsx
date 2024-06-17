@@ -15,6 +15,7 @@ export default function Inicio() {
   const { amd, adata, rogstrix, tForce, zotac } = imagenes;
   const [activeNuevos, setActiveNuevos] = useState(false);
   const [activeUltimosStocks, setUltimosStocks] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const dispatch = useDispatch();
   const { productos } = productsActions;
@@ -26,8 +27,10 @@ export default function Inicio() {
   const array2 = productosInicio.slice(10, 20);
 
   const productosTotales = async () => {
+    setLoading(true);
     const res = await dispatch(productos());
     setProductos(res.payload.response);
+    setLoading(false);
   };
 
   const nuevos = () => {
@@ -83,8 +86,14 @@ export default function Inicio() {
           </div> */}
         </div>
         <div className="containerCardsInicio">
-          <Carrousel array={array1}></Carrousel>
-          <Carrousel array={array2}></Carrousel>
+          {loading ? (
+            <h4>Cargando productos...</h4>
+          ) : (
+            <>
+              <Carrousel array={array1}></Carrousel>
+              <Carrousel array={array2}></Carrousel>
+            </>
+          )}
         </div>
         <ItemsShoppy />
         {!logged ? (
